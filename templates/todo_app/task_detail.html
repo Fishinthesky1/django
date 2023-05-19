@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <h1>{{ task.title }}</h1>
+  <p><strong>Author:</strong> {{ task.author }}</p>
+  <p><strong>Created Date:</strong> {{ task.created_date }}</p>
+  <p><strong>Due Date:</strong> {{ task.due_date }}</p>
+  <p><strong>Status:</strong> {{ task.status }}</p>
+  <p><strong>Task Case:</strong> {{ task.task_case }}</p>
+  <p><img src="{{ task.image_task.url }}" alt="Task Image"></p>
+{% endblock %}

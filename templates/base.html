@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Task Manager</title>
+</head>
+<body>
+  <header>
+    <h1>Task Manager</h1>
+    <nav>
+      <ul>
+        <li><a href="{% url 'tasks:task-list' %}">Task List</a></li>
+        <li><a href="{% url 'tasks:task-create' %}">Create Task</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    {% block content %}
+    
+    {% endblock %}
+  </main>
+</body>
+</html>
